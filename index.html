@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="favicon2.png">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>NYT Search</title>
   </head>
-  <header>
-    <div class="navbar navbar-absolute-top nyt-header">
-      <h1 class="ptitle text-center">New York Times Search</h1>
-    </div>
-    </header>
-    <body>
+
+  <body>
+        <header>
+            <div class="container navbar-absolute-top nyt-header btn btn-light">
+                <img class="logo" src="./img/NYT-logo.png"></br>
+              <h1 class=" ptitle text-center">SEARCH PAGE</h1>
+            </div>
+        </header>
+
+
+            <div class="row">
+                <div id="parameters" class="card rounded-lg col-md-12">
+                    <input type="text" id="search-term" class="btn border-2 border-dark data col-sm-5 btn-light font-weight-bold" label="Search Term" ></input>
+                </div>
+             </div>
+
+
+        <footer class="card-footer footer">
+          <p id="copyright">Copyright © Team-CBD</p>
+        </footer>
     </body>
-    <div class="card-footer footer">
-            <p class="text-center" id="copyright">Copyright © Team-CBD</p>
-         </div>
+
+
 
     </html>

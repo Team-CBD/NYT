@@ -1,0 +1,20 @@
+.logo {
+    width:33%;
+    height:auto;
+    display:inline-block;
+    margin: 0 auto;
+}
+.nyt-header {
+    background-color:rgb(63, 63, 121);
+    border-radius:0px 0px 10px 10px;
+}
+.ptitle {
+    color:white;
+}
+.footer {
+    position:fixed;
+    bottom:0;
+}
+#copyright {
+    justify-content:center;
+}
