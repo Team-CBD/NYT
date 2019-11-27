@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.jpg">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>NYT Search</title>
@@ -13,21 +14,47 @@
 
   <body>
         <header>
-            <div class="container navbar-absolute-top nyt-header btn btn-light">
-                <img class="logo" src="./img/NYT-logo.png"></br>
-              <h1 class=" ptitle text-center">SEARCH PAGE</h1>
+            <div class="container navbar-absolute-top nyt-header rounded-bottom">
+             <div class="row">
+              <div class="col-sm-12 text-center">  
+              <img class="logo" src="./img/NYT-logo.png"></br>
+              <h1 class="text-white ptitle text-center">SEARCH PAGE</h1>
+              </div>
+             </div>
             </div>
         </header>
 
 
-            <div class="row">
-                <div id="parameters" class="card rounded-lg col-md-12">
-                    <input type="text" id="search-term" class="btn border-2 border-dark data col-sm-5 btn-light font-weight-bold" label="Search Term" ></input>
-                </div>
-             </div>
+          
+        <div class="container search-header pb-3">
+
+          <div class="row shadow-sm border border-dark">
+              <div class="ptitle btn-lg text-white col pt-4">Search Parameters</div>
+          </div>
+        </div>
+        <div class="container search-box pb-3">
+           <div class="content pt-4 bg-light offset-md-1">
+               <form class="search">
+                 <input type="text" class="col-md-10 btn-lg search-button bg-white" placeholder="Search Term" name="search-field">
+                 <button id="search-button" class="icon rounded-sm btn-sm" type="submit"><p><i class="fa fa-search"></i></p></button></br>
+                 <input type="number" class="col-md-10 search-button btn-lg bg-white" placeholder="Number of Articles" value="5"></br>
+                 <input maxlength="4" type="number" class="col-md-10 btn-lg search-button bg-white" placeholder="Start Year (Optional)" name="search-field">
+                 <input maxlength="4" type="number" class="col-md-10 btn-lg search-button bg-white" placeholder="End Year (Optional)" name="search-field">
+                </form>
+           </div>
+           
+          </div>
+      
+         
+
+         <div class="container">
+            <div id="top-articles" class="ptitle btn-lg row card shadow-sm rounded-lg pt-5 pb-5 bg-white">TOP ARTICLES</div>
+            <div id="article-list" class="article-list"></div>
+          </div>
+        
 
 
-        <footer class="card-footer footer">
+        <footer class="card-footer text-center footer">
           <p id="copyright">Copyright © Team-CBD</p>
         </footer>
     </body>
